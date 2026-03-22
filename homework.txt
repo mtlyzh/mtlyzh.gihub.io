@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>百度一下，你就知道</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* 头部导航 */
+    .header {
+      height: 60px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .header a:hover {
+      color: #00c;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    .logo {
+      width: 270px;
+      height: 92px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-text {
+      font-size: 80px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-bai {
+      color: #E83C3C;
+    }
+
+    .logo-du {
+      color: white;
+      background-color: #3388FF;
+      border-radius: 50%;
+      padding: 0 15px;
+      margin: 0 5px;
+      position: relative;
+      display: inline-block;
+      height: 80px;
+      line-height: 80px;
+    }
+
+    .logo-paw {
+      font-size: 32px;
+      color: #3388FF;
+      margin: 0 5px;
+    }
+
+    .logo-chinese {
+      color: #E83C3C;
+      font-size: 40px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      width: 540px;
+      height: 44px;
+      border: 2px solid #4E6EF2;
+      border-radius: 22px;
+      padding: 0 15px;
+      margin-bottom: 30px;
+    }
+
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      height: 100%;
+    }
+
+    .search-btn {
+      background-color: #4E6EF2;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      width: 80px;
+      height: 36px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .search-btn:hover {
+      background-color: #3A58D9;
+    }
+
+    .hot-search {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 540px;
+      margin-top: 15px;
+    }
+
+    .hot-item {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+
+    .hot-item a {
+      color: #666;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .hot-item a:hover {
+      color: #4E6EF2;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 15px 0;
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+    }
+
+    .footer a {
+      color: #999;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .footer a:hover {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="#">新闻</a>
+    <a href="#">hao123</a>
+    <a href="#">地图</a>
+    <a href="#">视频</a>
+    <a href="#">贴吧</a>
+    <a href="#">更多</a>
+  </div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="img/t01cd9cad87614fcae2.jpg" alt="百度" width="270" height="92">
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="请输入搜索内容">
+      <button class="search-btn">百度一下</button>
+    </div>
+
+    <div class="hot-search">
+      <div class="hot-item"><a href="#">百度热搜</a></div>
+      <div class="hot-item"><a href="#">今日热点</a></div>
+      <div class="hot-item"><a href="#">新闻资讯</a></div>
+      <div class="hot-item"><a href="#">体育赛事</a></div>
+      <div class="hot-item"><a href="#">娱乐明星</a></div>
+      <div class="hot-item"><a href="#">科技前沿</a></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#">关于百度</a>
+    <a href="#">使用百度前必读</a>
+    <a href="#">隐私政策</a>
+    <a href="#">百度推广</a>
+    <span>©2026 Baidu</span>
+  </div>
+</body>
+
+</html>
