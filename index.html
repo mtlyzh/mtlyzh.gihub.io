@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邓超凡的网页设计作业 | 科技蓝主题</title>
+  <style>
+    /* 全局样式重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Microsoft YaHei', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    /* 主容器卡片 */
+    .main-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* 页眉区域 */
+    .header {
+      background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 2.2em;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .header p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1em;
+    }
+
+    /* 内容区域 */
+    .content {
+      padding: 40px 30px;
+    }
+
+    /* 作业列表样式 */
+    .work-list {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .work-list li {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      transition: all 0.3s ease;
+    }
+
+    .work-list li a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 1.1em;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      background: #f8f9fa;
+      border-radius: 12px;
+      margin-bottom: 5px;
+    }
+
+    .work-list li a:hover {
+      background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+      color: white;
+      transform: translateX(8px);
+      box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    }
+
+    /* 未激活的作业项（灰色样式） */
+    .work-list li.inactive {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      background: #f8f9fa;
+      border-radius: 12px;
+      color: #999;
+      font-size: 1.1em;
+      font-weight: 500;
+      cursor: not-allowed;
+    }
+
+    .work-list li.inactive .status-badge {
+      background: #e0e0e0;
+      color: #999;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8em;
+      font-weight: normal;
+    }
+
+    /* 激活状态徽章 */
+    .status-badge {
+      background: #3498db;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8em;
+      font-weight: normal;
+      transition: all 0.3s ease;
+    }
+
+    .work-list li a:hover .status-badge {
+      background: white;
+      color: #3498db;
+    }
+
+    /* 页脚 */
+    .footer {
+      background: #f8f9fa;
+      padding: 20px 30px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+    }
+
+    /* 动画效果 */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+      }
+
+      .header h1 {
+        font-size: 1.6em;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .work-list li a,
+      .work-list li.inactive {
+        padding: 14px 16px;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-card">
+    <div class="header">
+      <h1>✨ 邓超凡的网页设计作业 ✨</h1>
+      <p>Web Design Portfolio | 科技蓝主题</p>
+    </div>
+
+    <div class="content">
+      <ul class="work-list">
+        <li><a href="01_88dengchaofan0321/index01.html">
+            <span>📘 第一章案例作业</span>
+            <span class="status-badge">已完成</span>
+          </a></li>
+        <li class="inactive">
+          <span>📗 第二章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+        <li class="inactive">
+          <span>📙 第三章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+        <li class="inactive">
+          <span>📕 第四章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+        <li class="inactive">
+          <span>📒 第五章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+        <li class="inactive">
+          <span>📖 第六章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+        <li class="inactive">
+          <span>📘 第七章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+        <li class="inactive">
+          <span>📗 第八章案例作业</span>
+          <span class="status-badge">即将上线</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 231125088软工2班邓超凡的作业 | 用心设计，科技蓝主题 | 版权所有</p>
+    </div>
+  </div>
+</body>
+
+</html>

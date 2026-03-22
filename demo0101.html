@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邓超凡作业1-1 | 科技蓝主题</title>
+  <style>
+    /* 全局样式重置 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Microsoft YaHei', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    /* 主容器卡片 */
+    .main-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* 导航栏 */
+    .nav-bar {
+      background: #f8f9fa;
+      padding: 15px 30px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #3498db;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: white;
+    }
+
+    .back-link:hover {
+      background: #3498db;
+      color: white;
+      transform: translateX(-5px);
+    }
+
+    .breadcrumb {
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    .breadcrumb a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    /* 页眉区域 */
+    .header {
+      background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: white;
+      font-size: 2.2em;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .assignment-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 6px 16px;
+      border-radius: 30px;
+      color: white;
+      font-size: 0.9em;
+    }
+
+    /* 内容区域 */
+    .content {
+      padding: 40px 30px;
+    }
+
+    /* 作业信息卡片 */
+    .info-card {
+      background: #f0f7ff;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-left: 5px solid #3498db;
+    }
+
+    .info-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .info-title span {
+      font-size: 1.5em;
+    }
+
+    /* 作业内容区域 */
+    .homework-content {
+      background: #fafafa;
+      border-radius: 16px;
+      padding: 30px;
+      margin: 20px 0;
+      border: 1px solid #e0e0e0;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .homework-content p {
+      margin-bottom: 15px;
+    }
+
+    /* 装饰分割线 */
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 30px 0;
+      color: #3498db;
+    }
+
+    .divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #3498db, transparent);
+    }
+
+    /* 作业元信息 */
+    .meta-info {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px dashed #ddd;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    /* 页脚 */
+    .footer {
+      background: #f8f9fa;
+      padding: 20px 30px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+    }
+
+    /* 动画效果 */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+      }
+
+      .header h1 {
+        font-size: 1.5em;
+      }
+
+      .content {
+        padding: 25px 20px;
+      }
+
+      .homework-content {
+        padding: 20px;
+      }
+
+      .nav-bar {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-card">
+    <div class="nav-bar">
+      <a href="../index01.html" class="back-link">
+        ← 返回第一章首页
+      </a>
+      <div class="breadcrumb">
+        📍 当前位置：<a href="../index01.html">第一章</a> / 作业1-1
+      </div>
+    </div>
+
+    <div class="header">
+      <h1>📝 邓超凡的第一次作业 1-1</h1>
+      <div class="assignment-badge">HTML基础练习 | 科技蓝主题</div>
+      <p>© 2025 25软工邓超凡作业 | 科技蓝主题 | 第一章 案例作业1-1</p>
+    </div>
+  </div>
+</body>
+
+</html>
